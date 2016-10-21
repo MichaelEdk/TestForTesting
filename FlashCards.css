@@ -1,0 +1,83 @@
+h1 {
+	font-family: Arial;
+}
+
+table, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+/* table {
+	box-shadow: -5px 5px 5px #888888;
+} */
+
+#headRow {
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+#oddRow {
+	background-color: #C8C8C8 ;
+}
+
+#evenRow {
+	background-color: #E8E8E8;
+}
+
+.card {
+	border: 2px solid black;
+	margin: auto;
+	background-color: aliceblue;
+}
+
+#card {
+	width: 50%;
+	height: 400px;
+	box-shadow: -5px 5px 5px #888888;
+
+}
+
+#record {
+	width: 20%;
+	height: 50px;
+}
+
+#nextQ {
+	position: relative;
+	top: 70%;
+	margin:0 auto;
+    display: block;
+}
+
+#question {
+	text-align: center;
+	font-family: Arial; 
+	font-size: 3vw;
+}
+
+#answer {
+	display: block;
+	margin:0 auto;
+}
+
+div.col {
+    float: left;
+    width: 50%;
+    border: 2px solid black;
+	height: 30px;
+}
+
+#score {
+	text-align: center;
+	font-family: Arial;
+}
+
+body {
+	background-color: #FFFFCC;
+}
+
+#switch {
+	text-align: center;
+}
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="FlashCards.js"></script>
+	<link rel="stylesheet" href="FlashCards.css">
+</head>
+<body>
+	<h1>FLASH CARDZZ YO</h1>
+	<p>Choose a .txt file with your flashcards. It should be in the format <i>'question = answer'</i>. Once the file is selected the data will appear below. If everything looks good, click the button.</p>
+	<form>
+		<input accept="text/plain" id="inputFile" type="file" onchange='openFile(event)'>
+	</form>
+	<br>
+	<table id='output'></table>
+	<br>
+	<button id="startButton" style="display:none" onclick='startClick()'>Let's get started!</button>
+	<br>
+	<div id="card" class="card" style="display:none">
+		<p id="question"><p>
+		<input id="answer" placeholder="Place your answer here" onkeypress="if (event.keyCode == 13) nextClick()">
+		<br>
+		<button id="nextQ" onclick='nextClick()'>Next question</button>
+	</div>
+	<br>
+	<div class="card" id="record" style="display:none">
+	</div>
+	<br>
+	<div id="switch" style="display:none">
+		<button id="qSwitch"  onclick='switchQ()'>Swap Q+A</button>
+		<button id="resetRec" onclick='resetScore()'>Reset Score</button>
+	</div>
+</body>
+</html>
