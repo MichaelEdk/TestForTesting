@@ -77,11 +77,13 @@ function nextClick() {
 function checkAnswer(ind) {
 	var theirAns = document.getElementById("answer").value.toUpperCase();
 	var realAns = aArray[ind].toUpperCase();
+	document.getElementById("bigAnswer").innerHTML = realAns;
 	if (theirAns == realAns) {
 		alert("Correct!");
 		correct += 1;
 	} else {
-		alert("Not quite, the answer was '" + aArray[ind] + "'. Your answer was '" + document.getElementById("answer").value + "'");
+		// alert("Not quite, the answer was '" + aArray[ind] + "'. Your answer was '" + document.getElementById("answer").value + "'");
+		document.getElementById("bigAnswer").innerHTML = realAns;
 	}
 	document.getElementById("answer").value = "";
 	questions += 1;
@@ -102,3 +104,9 @@ function resetScore() {
 	correct = 0;
 	updateScore();
 }
+
+document.addEventListener('keypress', function(e) {
+if (e.keyCode == 13 || e.which == 13) {
+	nextClick();
+}
+})

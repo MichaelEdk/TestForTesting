@@ -51,7 +51,13 @@ table, td {
 
 #question {
 	text-align: center;
-	font-family: Arial; 
+	font-family: Arial;
+	font-size: 3vw;
+}
+
+#bigAnswer {
+	text-align: center;
+	font-family: Arial;
 	font-size: 3vw;
 }
 
@@ -79,5 +85,3 @@ body {
 #switch {
 	text-align: center;
 }
-
-
